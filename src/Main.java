@@ -56,7 +56,10 @@ public class Main {
 
     }
 
+    //does dot product multiplication of the two double arrays
     public static int[][] multiply(int[][] fir, int[][] sec){
+
+        //new array is row length in first by column length in second
         int[][] newarr = new int[fir.length][sec[0].length];
         int acc = 0;
 
@@ -81,6 +84,8 @@ public class Main {
         return newarr;
     }
 
+
+    //array into string
     public static String tostring(int[][] de){
         String acc = "";
         for(int i =0; i<de.length;i++){
@@ -91,6 +96,9 @@ public class Main {
         }
         return acc;
     }
+
+    //Max is number of 1s
+    //basically fills the array with some ones so we get some non zero values
 
     public static int[][] fill(int[][] gee, int max){
         int acc = 0;
